@@ -1,0 +1,15 @@
+---
+name: 'get'
+runner_type: 'local-shell-cmd'
+description: 'get a paste'
+enabled: true
+parameters:
+  pasteid:
+    type: string
+    description: 'The paste in format pasteID#passphrase'
+    default: 'pasteID#passphrase'
+    required: true
+  cmd:
+    type: string
+    immutable: true
+    default: 'pbincli get {{ pasteid }}'

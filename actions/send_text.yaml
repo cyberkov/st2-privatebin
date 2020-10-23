@@ -1,0 +1,14 @@
+---
+name: 'send_text'
+runner_type: 'local-shell-cmd'
+description: 'create a new text paste'
+enabled: true
+parameters:
+  text:
+    type: string
+    description: 'The text to send'
+    required: true
+  cmd:
+    type: string
+    immutable: true
+    default: 'pbincli send --text "{{ text }}"'
