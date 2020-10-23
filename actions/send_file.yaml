@@ -4,11 +4,6 @@ runner_type: 'local-shell-cmd'
 description: 'create a new file paste'
 enabled: true
 parameters:
-  caption:
-    type: string
-    description: 'a description of the file'
-    required: true
-    default: 'st2 paste'
   file:
     type: string
     description: 'The path of the file to send'
@@ -16,4 +11,4 @@ parameters:
   cmd:
     type: string
     immutable: true
-    default: '{{ config_context.pbincli_path }}/pbincli send --server {{ config_context.server }} -c "{{ caption }}" -f "{{ file }}"'
+    default: '{{ config_context.pbincli_path }}/pbincli send --server {{ config_context.server }} -f "{{ file }}"'
