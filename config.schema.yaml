@@ -1,0 +1,7 @@
+---
+server:
+  description: 'PrivateBin Server URI'
+  type: 'string'
+  required: true
+  secret: false
+  default: 'https://paste.i2pd.xyz/'

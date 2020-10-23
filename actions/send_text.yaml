@@ -8,7 +8,8 @@ parameters:
     type: string
     description: 'The text to send'
     required: true
+    secret: true
   cmd:
     type: string
     immutable: true
-    default: 'pbincli send --text "{{ text }}"'
+    default: 'pbincli send --server {{ config_context.server }} --text "{{ text }}"'
