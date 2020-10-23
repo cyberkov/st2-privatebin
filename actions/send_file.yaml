@@ -16,4 +16,4 @@ parameters:
   cmd:
     type: string
     immutable: true
-    default: 'pbincli send --server {{ config_context.server }} -c "{{ caption }}" -f "{{ file }}"'
+    default: '{{ config_context.pbincli_path }}/pbincli send --server {{ config_context.server }} -c "{{ caption }}" -f "{{ file }}"'

@@ -5,3 +5,8 @@ server:
   required: true
   secret: false
   default: 'https://paste.i2pd.xyz/'
+pbincli_path:
+  description: 'pbincli binary path. usually this is in your st2 virtualenv directory'
+  type: 'string'
+  required: true
+  default: '/opt/stackstorm/virtualenvs/privatebin/bin'
