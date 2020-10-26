@@ -1,5 +1,4 @@
 ---
-ref: privatebin
 name: Privatebin
 description: Privatebin integration for StackStorm
 keywords:
@@ -7,3 +6,7 @@ keywords:
 version: 0.1.0
 author: Hannes Schaller
 email: hannes.schaller@apa.at
+python_versions:
+  - '3'
+dependencies:
+  - core
