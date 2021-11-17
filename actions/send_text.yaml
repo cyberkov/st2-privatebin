@@ -12,4 +12,4 @@ parameters:
   cmd:
     type: string
     immutable: true
-    default: '{{ config_context.pbincli_path }}/pbincli send --server {{ config_context.server }} --text "{{ text }}"'
+    default: '{{ config_context.pbincli_path }}/pbincli send --server {{ config_context.server }} --text "{{ text }}" | sed -e "s/ //g; s/\t//g; s/:/=/"| grep "=" | jo'
